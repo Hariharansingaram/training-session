@@ -1,5 +1,27 @@
-
-
+import math
+num=input()
+arr=math.factorial(len(num))
+m=[]
+m=list(set(num))
+div=1
+for i in m:
+    div=div*math.factorial(num.count(i))
+pos=arr//div
+rep=pos//len(num)
+s=0
+for i in num:
+    s=s+int(i)
+s=s*rep
+mul=1
+val=0
+for i in range(len(num)):
+    val=val+s*mul
+    mul=mul*10
+if(len(m)==1):
+    print("".join(num))
+else:
+    print(val)
+************************************************************************
 
 
 Given a number N, find the sum of all different arrangements of N and print that as the final answer.
