@@ -1,0 +1,10 @@
+m=int(input())
+n=[2,3,5,7,11,13]
+c=m
+for i in n:
+    if m%i==0:
+        c=c-(c//i)
+print(c) 
+
+i/p:45
+o/p:24
