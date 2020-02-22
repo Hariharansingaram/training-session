@@ -11,3 +11,25 @@ for _ in range(100):
     if (i==2**le):
         le+=1
 i=0
+**************************************************
+ANSWER 2
+n = int(input())
+fill = 1
+k = 0
+p = 2
+c = 1
+while(n):
+    g = bin(k)[2:]
+    g = g.zfill(fill)
+    g = g.replace('1','9')
+    g = g.replace('0','1')
+    print(g)
+    k+=1
+    c+=1
+    if(c>p):
+        k = 0
+        p*=2
+        fill+=1
+        c = 1
+    
+    n-=1
