@@ -1,4 +1,14 @@
-
+n,cap=map(int,input().split())
+l=list(map(int,input().split()))
+lit=0
+m=""
+for i in l:
+    lit+=i
+    k=lit//cap
+    lit=(k*cap)
+    k%=10
+    m=m+str(k)
+print(m)
 
 
 
